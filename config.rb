@@ -1,11 +1,7 @@
-=begin
-This file can be used to (e.g.):
-- alter certain inner parts of Gollum,
-- extend it with your stuff.
+require 'gollum/app'
 
-It is especially useful for customizing supported formats/markups. For more information and examples:
-- https://github.com/gollum/gollum#config-file
+Precious::App.set(:wiki_options, {
+  page_file_dir: 'source',
+  emoji: true,
+})
 
-=end
-
-# enter your Ruby code here ...
