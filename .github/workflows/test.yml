@@ -1,0 +1,17 @@
+name: test
+on:
+  - push
+env:
+  CI: "true"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.6
+      - name: apt install
+        run: |
+          sudo apt update
+      - run: bundle exec rake test
