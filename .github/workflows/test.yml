@@ -14,4 +14,7 @@ jobs:
       - name: apt install
         run: |
           sudo apt update
+      - name: bundle install
+        run: |
+          bundle install --jobs 4 --retry 3
       - run: bundle exec rake test
