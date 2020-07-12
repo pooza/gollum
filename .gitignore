@@ -1,10 +1,13 @@
 coverage
 pkg
+Thumbs.db
 .DS_Store
 .bundle
-Gemfile.lock
 *.gem
 *.swp
 .*
+._*
+.fuse*
+.bundle/
 !.sprockets*
 !lib/gollum/public/gollum/stylesheets/_styles.css
