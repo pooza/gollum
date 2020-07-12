@@ -4,13 +4,13 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.summary = 'A simple, Git-powered wiki.'
   s.description = 'A simple, Git-powered wiki with a sweet API and local frontend.'
-
   s.authors = ['Tom Preston-Werner', 'Rick Olson']
   s.email = 'tom@github.com'
   s.homepage = 'http://github.com/gollum/gollum'
   s.require_paths = %w[lib]
   s.executables = ['gollum']
   s.test_files = s.files.select { |path| path =~ /^test\/test_.*\.rb/ }
+  s.required_ruby_version = '>=2.6'
 
   s.add_dependency 'kramdown', '~> 2.1.0'
   s.add_dependency 'kramdown-parser-gfm', '~> 1.0.0'
