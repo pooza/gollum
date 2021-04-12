@@ -27,7 +27,7 @@ PATH
   specs:
     gollum (5.0.1.0)
       gemojione (~> 4.1)
-      kramdown (~> 2.1.0)
+      kramdown (>= 2.1, < 2.4)
       kramdown-parser-gfm (~> 1.0.0)
       mustache (>= 0.99.5, < 1.0.0)
       octicons (~> 8.5)
@@ -65,7 +65,8 @@ GEM
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     json (2.3.1)
-    kramdown (2.1.0)
+    kramdown (2.3.1)
+      rexml
     kramdown-parser-gfm (1.0.1)
       kramdown (~> 2.0)
     loofah (2.6.0)

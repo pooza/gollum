@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.test_files = s.files.select { |path| path =~ /^test\/test_.*\.rb/ }
   s.required_ruby_version = '>=2.6'
 
-  s.add_dependency 'kramdown', '~> 2.1.0'
+  s.add_dependency 'kramdown', '>= 2.1', '< 2.4'
   s.add_dependency 'kramdown-parser-gfm', '~> 1.0.0'
   s.add_dependency 'sinatra', '~> 2.0'
   s.add_dependency 'sinatra-contrib', '~> 2.0'
